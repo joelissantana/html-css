@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda personalizada</title>
+    <style>
+        h1 {
+            border: 20px solid black;
+            padding: 10px;
+            border-image-source: url(borda.png);
+            border-image-slice: 27;
+           border-image-repeat: repeat;
+        }
+        /* sirve para colocar imagenes en los bordes de un texto y tambien se puede simplificar con un border-image: y despues siguiendo el orden de encima
+       border-image:url('borda.png')27 repeat 
+       y no se puede quitar el border de primero porque para de funcionar (border: 20px solid black;)*/
+
+    </style>
+</head>
+<body>
+    <h1>Teste da borda</h1>
+</body>
+</html>

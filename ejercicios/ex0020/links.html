@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            a {
+                color: red;}
+            a:visited {
+                color: darkred;
+            }
+            a:hover {
+                color: black;
+            }
+            /* si uno quiere cambiar el color de los links que ya fueron visitados es :visited
+            si quiero cambiar el color cuando se pasa el mousse por encima es con hover
+            pseudoclase se identifica con : 
+            pseudo elemento se identifica con ::
+            SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo class
+            :: = Pseudo elemento
+            */
+            a::after {
+                content: '[links]';
+                text-decoration: none;
+                font-weight: normal;
+                color: darkgray;
+            }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li> <a href="https://gustavoguanabara.github.io">epositorio Github </a>
+        </li>
+        <li><a href="https://youtube.com/cursoemvideo/">Canal de youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site do cursoemvideo</a></li>
+    </ul>
+</body>
+</html>
