@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;       }
+        table {
+            width: 500px;
+            border-collapse: collapse; /*sirve para quitar los espacios entre cada celda*/
+            position: relative; /*se coloco posicion relativa para hacer un efecto solo funciona con tabelas grandes para que el cabeçalho quede fijo en la tabla(se mueva los datos de la tabla y quede fijo el cabeçalho)
+            paso 1: TABLE: POSITION RELATIVE
+            PASO 2: CREAR THEAD > TR> TH { position: sticky;STICKY SIGNIFICA GRUDADO
+            top: 0;
+            background-color: gray;
+        }
+            }*/
+        }
+        td,th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }/*nth-child sirve para seleccionar de dos en dos tambien sirve even,se puede usar dos tbody uno con even y otro con odd (efeito zabrado video 31 o 30 de modulo 3) */
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>tabelas grandes</h1>
+    <!--ANATOMIAS PARA TABELAS GRANDES
+    caption: leyenda de la tabela
+    TABLE
+    THEAD
+    TR,TD,TH
+    TBODY
+    TR,TD,TH
+    TFOOT
+    TR,TD,TH
+    -->
+    <table>
+        <caption>População </caption>
+        <thead>
+            <tr>
+               <th scope="col">Estado</th>
+               <th scope="col" style="width: 50px;">População</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">17 164 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num"> 14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num"> 11 433 000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num"> 11 373 064</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num"> 9 557 064</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num"> 9 132 077</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num"> 8 602 865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num"> 14 873 064</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num"> 14 873 064</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td class="num"> 14 873 064</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num"> 14 873 064</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num"> 14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraba</td>
+                <td class="num"> 14 873 064</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num"> 14 873 064</td>
+            </tr>
+            <tr>
+                <td>Mato grosso</td>
+                <td class="num"> 14 873 064</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num"> 14 873 064</td>
+            </tr>
+            <tr>
+                <td>Piaul</td>
+                <td class="num"> 14 873 064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num"> 14 873 064</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num"> 14 873 064</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num"> 14 873 064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num"> 14 873 064</td>
+            </tr>
+            <tr>
+                <td>Sergpe</td>
+                <td class="num"> 14 873 064</td>
+            </tr>
+            <tr>
+                <td>Rondonia</td>
+                <td class="num"> 14 873 064</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td><strong>95,221,999</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

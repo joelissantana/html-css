@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        iframe {
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorem incidunt recusandae praesentium inventore dolorum atque, commodi ea a laudantium nemo assumenda doloribus libero porro officia necessitatibus, ut debitis odit?</p>
+    <ul>
+        <li><a href="pag001.html" target="frame">pagina1</a></li>
+        <li><a href="pag002.html" target="frame">pagina2</a></li>
+        <li><a href=""></a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quis qui, culpa iure ratione quo ipsa itaque quia repudiandae, labore ipsam quisquam corrupti incidunt voluptatibus cumque minus dolores ipsum veniam.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quis ipsa dicta, minima modi pariatur vel ex laboriosam magnam deleniti obcaecati ducimus, culpa numquam iste aliquam a dolores error molestiae.
+    </p>
+    <iframe id="tela" name="frame" srcdoc="<h1> escolha uma das opções acima </h1> " frameborder="0" height="500px" width="600px"></iframe>
+    <!-- el uso de name (bien importante) sirve para colocar los enlaces en la parte de iframe sin abrir otra pagina nueva
+     y tambien hay que colocar target: frame para que el link abra en el iframe-->
+</body>
+</html>
