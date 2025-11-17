@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Meu primer formulario</h1>
+    <form action="cadastro.php" autocomplete="off">
+        <!-- autocomplete off es para que no aparezca el texto para autocompletar en el formulario 
+         para hacer el enlace entre nome y lo que se coloca en la caja utilizamos label
+         existen dos tipos de metodo para los formularios metodo get(cuando los datos no son sensibles o sea datos personales) solo se manda hasta 3000 bytes o sea 3000 letras tambien no se puede fotos o post los datos no estan protegidos todavia
+         en el futuro se necesita estudiar https para proteger los datos -->
+        <p><label for="inome">Nome:</label> <input type="text" name="Nome" id="iNome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <input type="submit" value="enviar">
+    </form>
+    
+</body>
+</html>

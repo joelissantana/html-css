@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>teste de formulario</h1>
+    <form action="cadaastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu" Usuario></label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="minimo 5 letras" autocomplete="username">
+        </p>
+        <p>
+            <!-- required minleght y max sirve para limitar el minimo y el maximo de caracteres de usuario y senha tambien esta el size para limitar el tamaño de la caja
+             placeholder es para sugerir dentro de la caja despues que el usuario digita se elimina -->
+            <label for="isen" senha></label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20">
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
